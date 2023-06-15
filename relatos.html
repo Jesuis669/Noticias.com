@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relate uma História</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="sex">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">                                   
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          menu
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#"></a></li>
+                          <li><a class="dropdown-item" href="#"></a></li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com/seu_perfil_do_facebook"><i class="fab fa-facebook"></i>Facebook</a>
+                          </li>                        
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/seu_perfil_do_instagram"><i class="fab fa-instagram"></i>Instagram</a>
+                          </li>                        
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Relate uma História</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">desabilitado</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Procurar</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="masqueico">
+            <h1>Relate uma História</h1>
+            <form action="enviar_historia.php" method="POST">
+                <div class="mb-3">
+                    <label for="titulo" class="form-label">Título</label>
+                    <input type="text" class="form-control" id="titulo" name="titulo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="autor" class="form-label">Autor</label>
+                    <input type="text" class="form-control" id="autor" name="autor" required>
+                </div>
+                <div class="mb-3">
+                    <label for="data" class="form-label">Data</label>
+                    <input type="date" class="form-control" id="data" name="data" required>
+                </div>
+                <div class="mb-3">
+                    <label for="conteudo" class="form-label">Conteúdo</label>
+                    <textarea class="form-control" id="conteudo" name="conteudo" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
